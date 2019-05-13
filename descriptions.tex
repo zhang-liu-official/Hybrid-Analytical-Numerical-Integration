@@ -1,0 +1,30 @@
+%---------DO NOT EDIT THIS INDENTED SECTION
+	% Preamble
+	\documentclass[11pt,reqno,oneside,a4paper]{article}
+	\usepackage[a4paper,includeheadfoot,left=35mm,right=35mm,top=00mm,bottom=30mm,headheight=40mm]{geometry} %sets up the margins
+	\input{texHead-Proof-Standard} % Use the standard texHead for this module. You should not edit this file.
+	\input{texHead-Proof-Theorems} % Use the standard theorem definitions for this module. You should not edit this file.
+	%---The following code defines the title, author, and date of the document.
+	\title{Project Descriptions}
+	\author{Zhang Liu}
+	\date{\today}   % Using \today automatically updates to the document's build date
+%----------------------------------
+%---------IF YOU WANT TO DEFINE YOUR OWN MACROS, YOU CAN DO SO FROM HERE ...
+
+%---------... TO HERE
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\begin{itemize}
+	\item Aim to evaluate $\int f(\lambda; x, t)\frac{g(\lambda)}{h(\lambda)} d\lambda$ efficiently, for many $(x,t)$. Here calculating $g,h$ is expensive relative to $f$, so want to store evaluation of $g,h$.
+	
+	\item g, h are exponential polynomials, so their dominant terms (depending on where $\CC \mid \lambda$ is) can be isolated analytically before expensive evaluation of all non-dominant terms.
+	
+	\item Implementation in Julia.
+\end{itemize}
+
+\end{document}
+
+
+
