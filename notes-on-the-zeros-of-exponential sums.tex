@@ -1,0 +1,94 @@
+%---------DO NOT EDIT THIS INDENTED SECTION
+	% Preamble
+	\documentclass[11pt,reqno,oneside,a4paper]{article}
+	\usepackage[a4paper,includeheadfoot,left=35mm,right=35mm,top=00mm,bottom=30mm,headheight=40mm]{geometry} %sets up the margins
+	\input{texHead-Proof-Standard} % Use the standard texHead for this module. You should not edit this file.
+	\input{texHead-Proof-Theorems} % Use the standard theorem definitions for this module. You should not edit this file.
+	%---The following code defines the title, author, and date of the document.
+	\title{Notes on Langer 1973}
+	\author{Zhang Liu}
+	\date{\today}   % Using \today automatically updates to the document's build date
+%----------------------------------
+%---------IF YOU WANT TO DEFINE YOUR OWN MACROS, YOU CAN DO SO FROM HERE ...
+
+%---------... TO HERE
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\section{Introduction}
+	An exponential sum is a type of function in the form
+	\begin{equation} 
+	\tag{1} \Phi(z) = \sum_{j=0}^{n}A_{j}(z) e^{c_{j}z}, 
+	\end{equation}
+	where $A_{j}(z)$ and $c_{j}$ are constants, $c_{j}\in \RR.$
+	
+	\bigskip
+	
+	The function (1) can be expressed in a form
+	\begin{equation} 
+	\tag{2} \Phi(z - z_0) = z \int_{c_0}^{c_n}\phi(t)e^{tz}dt. 
+	\end{equation}
+	
+	The integral of the type here involved with less specialized function $\phi(t)$ represents a generalization of certain sums of type (1).
+	
+	
+\section{Constant Coefficients and Real Commensurable Exponents.}
+
+\begin{thm}
+	If in the exponential sum (1) the coefficients are constants and the exponents are real and commensurable, then the distribution of zeros is given explicitly by the formula:
+	
+	$$z = \frac{1}{\alpha}\{2m \pi i + \log\xi_{j}\},$$
+	$$(j = 1,2,\cdots, p_n, m = 0, \pm1, \pm2,\cdots).$$
+	
+	In this distribution the number of zeros which lie between two lines $y=y_1$ and $y=y_2$, is restricted by the relation (7), i.e., 
+	
+	$$-n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).$$
+\end{thm}
+
+\begin{thm}
+	If the coefficients $a_j$ are real and the zeros of the polynomial 
+	$$P(\xi)= \sum_{j=0}^{n}a_{j}\xi^{j}$$
+	all lie within the unit circle about $\xi=0$, then the zeros of the corresponding trigonometric sums are all real and simple, where the trigonometric sums are:
+	$$\Phi_{c}(z) = \sum_{j=0}^{n}a_{j}\cos jz$$
+	$$\Phi_{s}(z) = \sum_{j=1}^{n}a_{j}\sin jz.$$	
+	
+	Each of these sumes has precisely $2n$ zeros on the interval $0 \leq z < 2\pi$ and the zeros of either sum alternate with those of the other. (By a theorem of Kakya the hypothesis is fulfilled if $0 \leq 1_0 < a_1 < \cdots < a_n$.)	
+\end{thm}
+
+\section{Constant Coefficients and General Real Exponents.}
+	Under the case of "Constant Coefficients and General Real Exponents," the sum $\Phi(z)$ is expressed by the formula:
+	\begin{equation} 
+	\tag {10} \Phi(z) = \sum_{j=0}^{n}a_{j}e^{c_{j}z}, c_0 = 0.
+	\end{equation}
+\begin{thm}
+	If in the exponential sum (10) the coefficients are constants and the exponents are real, then the zeros of the sum all lie within a strip (5), i.e., 
+	
+	$$\abs(x) < K (z = x + iy),$$
+	and in any portion of this strip the number of zeros is limited by relation (7), i.e., 
+	
+	$$-n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).$$
+	
+	When $z$ is uniformly bounded from the zeros of $\Phi(z)$, then $\abs\Phi(z)$ is uniformly bounded from zero. 
+\end{thm}
+
+\section{Coefficients Asymptotically Constant.}
+Under the case of "Coefficients Asymptotically Constant," the form assumed for the sum (1) is:
+	\begin{equation} 
+	\tag {14} \Phi(z) = \sum_{j=0}^{n}a_{j + \epsilon(z)}e^{c_{j}z}, a_0a_n \neq 0.
+	\end{equation}
+\begin{thm}
+	If the function $\Phi(z)$ (or a determination of it) is of the form (14), then in the region $\abs(z) > M$ the distribution of zeros of $\Phi(z)$ (or of the branch of $\Phi(z)$ in question) may be described as in Theorem 3. The zeros are asymptotically represented by those of the related sum (15), i.e.,
+	$$\Phi_1(z) = \sum_{j=0}^{n} a_{j}e^{c_{j}z}.$$
+\end{thm}
+
+\section{Coefficients which are Asymptotically Power Functions.}
+\section{The Values $v_j$ and $c_j$ Proportional.}
+
+\begin{thm}
+	If in the exponential sum (1) the coefficients are of the form (16) with values $v_j$ proportional to the exponents $c_j$, and all terms are ordinary terms, then the zeros of the sum are asymptotically located within a logarithmic curvilinear strip bounded by curves of the form (18), i.e., 
+\end{thm}
+\end{document}
+
+
+
