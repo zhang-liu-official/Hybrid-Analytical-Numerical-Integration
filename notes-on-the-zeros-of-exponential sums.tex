@@ -5,7 +5,7 @@
 	\input{texHead-Proof-Standard} % Use the standard texHead for this module. You should not edit this file.
 	\input{texHead-Proof-Theorems} % Use the standard theorem definitions for this module. You should not edit this file.
 	%---The following code defines the title, author, and date of the document.
-	\title{Notes on Langer 1973}
+	\title{Notes on Langer Paper}
 	\author{Zhang Liu}
 	\date{\today}   % Using \today automatically updates to the document's build date
 %----------------------------------
@@ -17,6 +17,7 @@
 \thispagestyle{fancy}
 
 \section{Introduction}
+
 	An exponential sum is a type of function in the form
 	\begin{equation} 
 	\tag{1} \Phi(z) = \sum_{j=0}^{n}A_{j}(z) e^{c_{j}z}, 
@@ -39,11 +40,12 @@
 	If in the exponential sum (1) the coefficients are constants and the exponents are real and commensurable, then the distribution of zeros is given explicitly by the formula:
 	
 	$$z = \frac{1}{\alpha}\{2m \pi i + \log\xi_{j}\},$$
-	$$(j = 1,2,\cdots, p_n, m = 0, \pm1, \pm2,\cdots).$$
+	$$(j = 1,2,\cdots, p_n), (m = 0, \pm1, \pm2,\cdots).$$
 	
-	In this distribution the number of zeros which lie between two lines $y=y_1$ and $y=y_2$, is restricted by the relation (7), i.e., 
-	
-	$$-n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).$$
+	In this distribution the number of zeros which lie between two lines $y=y_1$ and $y=y_2$, is restricted by the relations (7), i.e., 
+	\begin{equation} 
+	\tag{7} -n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).
+	\end{equation}
 \end{thm}
 
 \begin{thm}
@@ -53,7 +55,7 @@
 	$$\Phi_{c}(z) = \sum_{j=0}^{n}a_{j}\cos jz$$
 	$$\Phi_{s}(z) = \sum_{j=1}^{n}a_{j}\sin jz.$$	
 	
-	Each of these sumes has precisely $2n$ zeros on the interval $0 \leq z < 2\pi$ and the zeros of either sum alternate with those of the other. (By a theorem of Kakya the hypothesis is fulfilled if $0 \leq 1_0 < a_1 < \cdots < a_n$.)	
+	Each of these sums has precisely $2n$ zeros on the interval $0 \leq z < 2\pi$ and the zeros of either sum alternate with those of the other. (By a theorem of Kakya the hypothesis is fulfilled if $0 \leq a_0 < a_1 < \cdots < a_n$.)	
 \end{thm}
 
 \section{Constant Coefficients and General Real Exponents.}
@@ -63,11 +65,13 @@
 	\end{equation}
 \begin{thm}
 	If in the exponential sum (10) the coefficients are constants and the exponents are real, then the zeros of the sum all lie within a strip (5), i.e., 
-	
-	$$\abs(x) < K (z = x + iy),$$
+	\begin{equation}
+	\tag{5} \abs x < K (z = x + iy),
+	\end{equation}
 	and in any portion of this strip the number of zeros is limited by relation (7), i.e., 
-	
-	$$-n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).$$
+	\begin{equation} 
+	\tag{7} -n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).
+	\end{equation}
 	
 	When $z$ is uniformly bounded from the zeros of $\Phi(z)$, then $\abs\Phi(z)$ is uniformly bounded from zero. 
 \end{thm}
@@ -75,19 +79,60 @@
 \section{Coefficients Asymptotically Constant.}
 Under the case of "Coefficients Asymptotically Constant," the form assumed for the sum (1) is:
 	\begin{equation} 
-	\tag {14} \Phi(z) = \sum_{j=0}^{n}a_{j + \epsilon(z)}e^{c_{j}z}, a_0a_n \neq 0.
+	\tag {14} \Phi(z) = \sum_{j=0}^{n}\{a_{j} + \epsilon(z)\}e^{c_{j}z}, a_0a_n \neq 0.
 	\end{equation}
 \begin{thm}
-	If the function $\Phi(z)$ (or a determination of it) is of the form (14), then in the region $\abs(z) > M$ the distribution of zeros of $\Phi(z)$ (or of the branch of $\Phi(z)$ in question) may be described as in Theorem 3. The zeros are asymptotically represented by those of the related sum (15), i.e.,
-	$$\Phi_1(z) = \sum_{j=0}^{n} a_{j}e^{c_{j}z}.$$
+	If the function $\Phi(z)$ (or a determination of it) is of the form (14), then in the region $\abs z > M$ the distribution of zeros of $\Phi(z)$ (or of the branch of $\Phi(z)$ in question) may be described as in Theorem 3. The zeros are asymptotically represented by those of the related sum (15), i.e.,
+	\begin{equation}
+	\tag{15} \Phi_1(z) = \sum_{j=0}^{n} a_{j}e^{c_{j}z}.
+	\end{equation}
 \end{thm}
 
 \section{Coefficients which are Asymptotically Power Functions.}
+	It will be supposed now that in the form (1) the coefficients $A_{j}(z)$, or chosen branches of them, are of the form 
+	\begin{equation} 
+	\tag {16} A_{j}(z) = z^{vj}\{a_j + \epsilon(z)\}, a_0a_n \neq 0, 
+	\end{equation}
+	for $z$ in the region $\abs z > M, -\pi < arg z \leq \pi$. The values $v_j$ are any real constants.
+	
 \section{The Values $v_j$ and $c_j$ Proportional.}
-
 \begin{thm}
 	If in the exponential sum (1) the coefficients are of the form (16) with values $v_j$ proportional to the exponents $c_j$, and all terms are ordinary terms, then the zeros of the sum are asymptotically located within a logarithmic curvilinear strip bounded by curves of the form (18), i.e., 
+	\begin{equation} 
+	\tag {18} x + \beta \log \abs z = \pm K,
+	\end{equation}
+	and the number of zeros lying between any two lines parallel to the axis of reals is asymptotically subject to the relations (7), i.e.,
+	\begin{equation} 
+	\tag{7} -n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).
+	\end{equation}.
 \end{thm}
+
+\section{General Real Values $v_j$.}
+\begin{thm}
+	If $\Phi(z)$ is an exponential sum with coefficients of the form (16) (the $v_j$ for exceptional terms satisfying the hypothesis of the text), then the zeros of the sum are asymptotically confined to a finite number of logarithmic strips (23), i.e., 
+	\begin{equation} 
+	\tag {23} x + m_r \log \abs z = \pm K,
+	\end{equation}
+	and the number of zeros in any strip between two lines parallel to the axis of reals being asymptotically subject to a realtion similar to (7), i.e.,
+	\begin{equation} 
+	\tag{7} -n_r + \frac{c_{n,n_r}}{2\pi}(y_2-y_1) \leq n_r(R) \leq n_r + \frac{c_{n,n_r} - c_{r_1}}{2\pi}(y_2-y_1).
+	\end{equation}.
+\end{thm}
+
+\section{Collinear Complex Exponents.}
+
+The previous cases of sum (1) concern primarily with the structure of the coefficient functions $A_{j}(z)$. The exponents have been assumed to be real. But the distribution of zeros of the sum having complex exponents is also determinable.
+
+\begin{thm}
+	If the  exponents $c_j$ in the exponential sum (1) are collinear complex constants, the distribution of zeros of $\Phi(z)$ is obtainable from the theorem previously enunciated by substituting in the role of the axis of reals the line containing the points $\bar c_j$ conjugate to the exponents $c_j$.
+\end{thm}
+
+\section{General Complex Constants.}
+
+\begin{thm}
+	If in the sum (1) the exponents are any complex constants, the zeros of $\Phi(z)$ are confined for $\abs z >M$ to a finite number of strips each of asymptotically constant width. These strips are associated in groups with the exterior normals to the sides of the polygon described in the text, and approach parallelism with the respective normals. Within each group of strips the distribution of zeros may be described as in the previously stated theorems, the role of the axis of reals being transferred to the respective side of the polygon.
+\end{thm}
+
 \end{document}
 
 
