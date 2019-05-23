@@ -2,11 +2,10 @@
 	% Preamble
 	\documentclass[11pt,reqno,oneside,a4paper]{article}
 	\usepackage[a4paper,includeheadfoot,left=35mm,right=35mm,top=00mm,bottom=30mm,headheight=40mm]{geometry} %sets up the margins
-	\setcounter{section}{-1}
 	\input{texHead-Proof-Standard} % Use the standard texHead for this module. You should not edit this file.
 	\input{texHead-Proof-Theorems} % Use the standard theorem definitions for this module. You should not edit this file.
 	%---The following code defines the title, author, and date of the document.
-	\title{Notes on Langer Paper}
+	\title{Summary on Langer Paper}
 	\author{Zhang Liu}
 	\date{\today}   % Using \today automatically updates to the document's build date
 %----------------------------------
@@ -23,11 +22,16 @@
 	\begin{equation} 
 	\tag{1} \Phi(z) = \sum_{j=0}^{n}A_{j}(z) e^{c_{j}z}, 
 	\end{equation}
-	where the coefficients $A_{j}(z)$ and the exponents $c_{j}$ are constants, $c_{j}\in \RR.$ The exponential sum will be the subject of discussion. 
+	where $A_{j}(z)$ and $c_{j}$ are constants, $c_{j}\in \RR.$
 	
-	This paper aims to consider the distribution of zeros of exponential sums, from forms of less to forms of greater generality. It is relevant to our project because these results help us 'eliminate' terms in the exponential sums that can be considered as zero, i.e., the terms that do not contribute as much to the final value of the exponential sum. This will in turn significantly speed up the process of numerically evaluating the integration of exponential sums. 
+	\bigskip
 	
-	For the purpose of our project, we will only focus on the following cases: (1) Constant Coefficients and Real Commensurable Exponents. (2) Constant Coefficients and General Real Exponents. (3) Coefficients Asymptotically Constant. (4) Collinear Complex Exponents. (5) General Complex Constants. (Note that the original theorems 5 and 6 are less relevant to our project because the polynomials are assumed to be of the same degree in the scope of our project.)
+	The function (1) can be expressed in a form
+	\begin{equation} 
+	\tag{2} \Phi(z - z_0) = z \int_{c_0}^{c_n}\phi(t)e^{tz}dt. 
+	\end{equation}
+	
+	The integral of the type here involved with less specialized function $\phi(t)$ represents a generalization of certain sums of type (1).
 	
 	
 \section{Constant Coefficients and Real Commensurable Exponents.}
@@ -82,6 +86,37 @@ Under the case of ``Coefficients Asymptotically Constant," the form assumed for 
 	\begin{equation}
 	\tag{15} \Phi_1(z) = \sum_{j=0}^{n} a_{j}e^{c_{j}z}.
 	\end{equation}
+\end{thm}
+
+\section{Coefficients which are Asymptotically Power Functions.}
+	It will be supposed now that in the form (1) the coefficients $A_{j}(z)$, or chosen branches of them, are of the form 
+	\begin{equation} 
+	\tag {16} A_{j}(z) = z^{vj}\{a_j + \epsilon(z)\}, a_0a_n \neq 0, 
+	\end{equation}
+	for $z$ in the region $\abs z > M, -\pi < arg z \leq \pi$. The values $v_j$ are any real constants.
+	
+\section{The Values $v_j$ and $c_j$ Proportional.}
+\begin{thm}
+	If in the exponential sum (1) the coefficients are of the form (16) with values $v_j$ proportional to the exponents $c_j$, and all terms are ordinary terms, then the zeros of the sum are asymptotically located within a logarithmic curvilinear strip bounded by curves of the form (18), i.e., 
+	\begin{equation} 
+	\tag {18} x + \beta \log \abs z = \pm K,
+	\end{equation}
+	and the number of zeros lying between any two lines parallel to the axis of reals is asymptotically subject to the relations (7), i.e.,
+	\begin{equation} 
+	\tag{7} -n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).
+	\end{equation}.
+\end{thm}
+
+\section{General Real Values $v_j$.}
+\begin{thm}
+	If $\Phi(z)$ is an exponential sum with coefficients of the form (16) (the $v_j$ for exceptional terms satisfying the hypothesis of the text), then the zeros of the sum are asymptotically confined to a finite number of logarithmic strips (23), i.e., 
+	\begin{equation} 
+	\tag {23} x + m_r \log \abs z = \pm K,
+	\end{equation}
+	and the number of zeros in any strip between two lines parallel to the axis of reals being asymptotically subject to a realtion similar to (7), i.e.,
+	\begin{equation} 
+	\tag{7} -n_r + \frac{c_{r,n_r}}{2\pi}(y_2-y_1) \leq n_r(R) \leq n_r + \frac{c_{r,n_r} - c_{r_1}}{2\pi}(y_2-y_1).
+	\end{equation}.
 \end{thm}
 
 \section{Collinear Complex Exponents.}
