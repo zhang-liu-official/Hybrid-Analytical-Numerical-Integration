@@ -32,6 +32,21 @@
 	
 \section{Constant Coefficients and Real Commensurable Exponents.}
 
+The paper starts by discussing the simplest case: when the coefficients are constants ($A_j(z) \equiv a_j$) and the exponents are commensurable real numbers. Two real numbers are commensurable if their ratio is rational, for example, $2\pi$ and $4\pi$ are commensurable because $\frac{2\pi}{4\pi} = \frac{1}{2} \in \QQ$. 
+
+This case is the simplest because then the problem of the distribution of zeros essentially becomes an algebraic one: to simply arrange the terms to suppose that the exponents occur in the order of increasing algebraic magnitude and to assume without loss of generality that the first exponent $c_0$ is zero (to remove any exponential factor that does not really matter, i.e., that does not affect the number or distribution of the zeros of the function as a whole).
+
+In this case, the sum is of the form:
+\begin{equation} 
+\tag {3} \Phi(z) = \sum_{j=0}^{n}a_{j}(e^{\alpha z})^{p_j}, p_0 = 0,
+\end{equation}
+
+for example, let $\alpha = \pi, n = 4, p_j = j$
+
+$$\Phi(z) = a_0(e^z)^0 + a_1(e^{\pi z})^1 + a_2(e^{\pi z})^2 + a_3(e^{\pi z})^3 + a_4(e^{\pi z})^4,$$
+
+which is a polynomial of degree $p_n$ in the quantity $e^{\alpha z}$.
+
 \begin{thm}
 	If in the exponential sum (1) the coefficients are constants and the exponents are real and commensurable, then the distribution of zeros is given explicitly by the formula:
 	
@@ -43,6 +58,10 @@
 	\tag{7} -n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).
 	\end{equation}
 \end{thm}
+
+Explanation of Theorem 1:  
+
+When $z = \frac{1}{\alpha}\{2m \pi i + \log\xi_{j}\},$ the function vanishes for such values of $z$. Using the example for the form (3), 
 
 \begin{thm}
 	If the coefficients $a_j$ are real and the zeros of the polynomial 
