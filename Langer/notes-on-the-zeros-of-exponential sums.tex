@@ -9,6 +9,8 @@
 	\title{Notes on Langer Paper}
 	\author{Zhang Liu}
 	\date{\today}   % Using \today automatically updates to the document's build date
+	\usepackage{mdframed}
+	\newmdtheoremenv{theo}{Theorem}
 %----------------------------------
 %---------IF YOU WANT TO DEFINE YOUR OWN MACROS, YOU CAN DO SO FROM HERE ...
 
@@ -47,7 +49,32 @@ $$\Phi(z) = a_0(e^z)^0 + a_1(e^{\pi z})^1 + a_2(e^{\pi z})^2 + a_3(e^{\pi z})^3 
 
 which is a polynomial of degree $p_n$ in the quantity $e^{\alpha z}$.
 
-\begin{thm}
+For form 3, the zeros of the function occurs when values of $z$ satisfy a relation:
+
+$$e^{\alpha z} = \xi_j.$$
+
+A result from the above relation is: 
+\begin{equation} 
+\tag {4} z = \frac{1}{\alpha}\{2m \pi i + \log\xi_{j}\},
+\end{equation}
+
+where the $2m \pi i$ gives rise to the periodic nature of the zeros. Based on this result, the zeros are seen to be countably finite in number and to be distributed in the complex plane at regular intervals of length $2\pi/\alpha$ along $p_n$ lines which are normal to the real axis. 
+
+From the result (4), given a function $\Phi(z),$ there exists a constant $K$ such that the zeros of $Phi(z)$ all lie within the rectangle strip of the z plane given by the relation
+
+\begin{equation} 
+\tag {5} \abs{x}<K, (z=x+iy).
+\end{equation}
+
+By evaluating the extreme possible changes in $arg \Phi(z)$ as $z$ traces the boundary of the above rectangle, the paper also concludes that the number $n(R)$ of zeros of $\Phi(z)$ within the rectangle is subject to the bounds:
+
+\begin{equation} 
+\tag {7} -n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).
+\end{equation}
+
+With this, Theorem 1 is stated:
+
+\begin{theo}
 	If in the exponential sum (1) the coefficients are constants and the exponents are real and commensurable, then the distribution of zeros is given explicitly by the formula:
 	
 	$$z = \frac{1}{\alpha}\{2m \pi i + \log\xi_{j}\},$$
@@ -57,13 +84,15 @@ which is a polynomial of degree $p_n$ in the quantity $e^{\alpha z}$.
 	\begin{equation} 
 	\tag{7} -n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).
 	\end{equation}
-\end{thm}
+\end{theo}
 
-Explanation of Theorem 1:  
 
-When $z = \frac{1}{\alpha}\{2m \pi i + \log\xi_{j}\},$ the function vanishes for such values of $z$. Using the example for the form (3), 
+An extension of this are the trigonometric sums, i.e.,
+$$\Phi_{c}(z) = \sum_{j=0}^{n}a_{j}\cos jz$$
+$$\Phi_{s}(z) = \sum_{j=1}^{n}a_{j}\sin jz.$$	
+The hypothesis of commensurability includes the trigonometric sums. In fact, it includes any linear combination of trigonometric functions of integral multiples of $z$. For these sums, we can use Theorem 2:
 
-\begin{thm}
+\begin{theo}
 	If the coefficients $a_j$ are real and the zeros of the polynomial 
 	$$P(\xi)= \sum_{j=0}^{n}a_{j}\xi^{j}$$
 	all lie within the unit circle about $\xi=0$, then the zeros of the corresponding trigonometric sums are all real and simple, where the trigonometric sums are:
@@ -71,14 +100,19 @@ When $z = \frac{1}{\alpha}\{2m \pi i + \log\xi_{j}\},$ the function vanishes for
 	$$\Phi_{s}(z) = \sum_{j=1}^{n}a_{j}\sin jz.$$	
 	
 	Each of these sums has precisely $2n$ zeros on the interval $0 \leq z < 2\pi$ and the zeros of either sum alternate with those of the other. (By a theorem of Kakya the hypothesis is fulfilled if $0 \leq a_0 < a_1 < \cdots < a_n$.)	
-\end{thm}
+\end{theo}
 
 \section{Constant Coefficients and General Real Exponents.}
-	Under the case of ``Constant Coefficients and General Real Exponents," the sum $\Phi(z)$ is expressed by the formula:
+	The second and a more general case is that when the exponents are not guaranteed to be commensurable and as as result the problem of the distribution of zeros is no longer simply an algebraic one (unlike the first case). The only difference is that the distance between distinct zeros of $\Phi(z)$ has no positive lower bound in the general case of incommensurable exponent; whereas when the exponents are commensurable a minimum distance between zeros does exist. 
+	
+	Under this case of ``Constant Coefficients and General Real Exponents," the sum $\Phi(z)$ is expressed by the formula:
 	\begin{equation} 
 	\tag {10} \Phi(z) = \sum_{j=0}^{n}a_{j}e^{c_{j}z}, c_0 = 0.
 	\end{equation}
-\begin{thm}
+	
+	The result (as stated in Theorem 3 below) is the same as in the first case. What applies to the first case can also be established for the more general case. 
+	
+\begin{theo}
 	If in the exponential sum (10) the coefficients are constants and the exponents are real, then the zeros of the sum all lie within a strip (5), i.e., 
 	\begin{equation}
 	\tag{5} \abs x < K (z = x + iy),
@@ -89,33 +123,33 @@ When $z = \frac{1}{\alpha}\{2m \pi i + \log\xi_{j}\},$ the function vanishes for
 	\end{equation}
 	
 	When $z$ is uniformly bounded from the zeros of $\Phi(z)$, then $\abs{\Phi(z)}$ is uniformly bounded from zero. 
-\end{thm}
+\end{theo}
 
 \section{Coefficients Asymptotically Constant.}
 Under the case of ``Coefficients Asymptotically Constant," the form assumed for the sum (1) is:
 	\begin{equation} 
 	\tag {14} \Phi(z) = \sum_{j=0}^{n}\{a_{j} + \epsilon(z)\}e^{c_{j}z}, a_0a_n \neq 0.
 	\end{equation}
-\begin{thm}
+\begin{theo}
 	If the function $\Phi(z)$ (or a determination of it) is of the form (14), then in the region $\abs z > M$ the distribution of zeros of $\Phi(z)$ (or of the branch of $\Phi(z)$ in question) may be described as in Theorem 3. The zeros are asymptotically represented by those of the related sum (15), i.e.,
 	\begin{equation}
 	\tag{15} \Phi_1(z) = \sum_{j=0}^{n} a_{j}e^{c_{j}z}.
 	\end{equation}
-\end{thm}
+\end{theo}
 
 \section{Collinear Complex Exponents.}
 
 The previous cases of sum (1) concern primarily with the structure of the coefficient functions $A_{j}(z)$. The exponents have been assumed to be real. But the distribution of zeros of the sum having complex exponents is also determinable.
 
-\begin{thm}
+\begin{theo}
 	If the  exponents $c_j$ in the exponential sum (1) are collinear complex constants, the distribution of zeros of $\Phi(z)$ is obtainable from the theorem previously enunciated by substituting in the role of the axis of reals the line containing the points $\bar c_j$ conjugate to the exponents $c_j$.
-\end{thm}
+\end{theo}
 
 \section{General Complex Constants.}
 
-\begin{thm}
+\begin{theo}
 	If in the sum (1) the exponents are any complex constants, the zeros of $\Phi(z)$ are confined for $\abs z >M$ to a finite number of strips each of asymptotically constant width. These strips are associated in groups with the exterior normals to the sides of the polygon described in the text, and approach parallelism with the respective normals. Within each group of strips the distribution of zeros may be described as in the previously stated theorems, the role of the axis of reals being transferred to the respective side of the polygon.
-\end{thm}
+\end{theo}
 
 \end{document}
 
