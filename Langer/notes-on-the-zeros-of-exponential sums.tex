@@ -136,10 +136,19 @@ The hypothesis of commensurability includes the trigonometric sums. In fact, it 
 
 If the second case is a more general replacement of the hypothesis of commensurability, then in this section, the hypothesis of constant coefficients is replaced without essential loss by a less stringent one: that the coefficients are sufficiently like constants when $\abs{z}$ is large.
 
-Under this case of ``Coefficients Asymptotically Constant," the form assumed for the sum (1) is:
+The main reason that we can replace this hypothesis is that we are mostly interested in the region $\abs{z} > M$ where $M$ is a constant arbitrarily large. And we know that there must exist an arbitrarily large number $M$ such that in the region $\abs{z} > M$ the coefficients are constant. In other words, the coefficients do not have to be exactly constant in value, as long as $\abs{z}$ is sufficiently large (i.e., as long as $z$ gets sufficiently far away from the origin), we can take it as that the coefficients are constant, or in more precise terms, asymptotically constant. 
+
+To fit this case in a form corresponding to sum (1), the paper introduced the epsilon function, $\epsilon(z)$. In a region $R$ of the $z$ plane including the point $z=\infty$, $\epsilon(z)$ is analytic in every finite portion of $R$ and it approaches zero uniformly in $R$ as $\abs{z} \to \infty$.
+
+Now either that the coefficients $A_j(z)$ in the sum (1) are single valued and of the form $ A_J(z) = a_j + \epsilon(z),$ in the region $\abs(z) > M$, or that they are multiple valued but such that in the region $\abs(z) > M$, $-\pi < arg z \leq \pi$, their various branches are each of the form $ A_J(z) = a_j + \epsilon(z).$
+
+Therefore, under this case of ``Coefficients Asymptotically Constant," the form assumed for the sum (1) is:
 	\begin{equation} 
 	\tag {14} \Phi(z) = \sum_{j=0}^{n}\{a_{j} + \epsilon(z)\}e^{c_{j}z}, a_0a_n \neq 0.
 	\end{equation}
+	
+This way, we essentially transform this more general case into the previous case of constant coefficients and real exponents. The distribution and number of zeros hence follow what is already established in Theorem 3. With that, we state Theorem 4 as follows.
+
 \begin{theo}
 	If the function $\Phi(z)$ (or a determination of it) is of the form (14), then in the region $\abs z > M$ the distribution of zeros of $\Phi(z)$ (or of the branch of $\Phi(z)$ in question) may be described as in Theorem 3. The zeros are asymptotically represented by those of the related sum (15), i.e.,
 	\begin{equation}
@@ -157,7 +166,7 @@ $$\Phi(z) = e^{(2 - 9i)z} + e^{(1-6i)z} + e^{(-3+6i)z}.$$
 
 (Note: It is easy to show that $2-9i, 1-6i, -3+6i$ are collinear, by either the distance method or the equation method.)
 
-We then plot the distribution of zeros for exponential sum with collinear complex exponents, as shown in Figure 2.
+We then plot the distribution of zeros for exponential sum with collinear complex exponents, as shown in Figure 3.
 
 \begin{theo}
 	If the  exponents $c_j$ in the exponential sum (1) are collinear complex constants, the distribution of zeros of $\Phi(z)$ is obtainable from the theorem previously enunciated by substituting in the role of the axis of reals the line containing the points $\bar c_j$ conjugate to the exponents $c_j$.
@@ -165,13 +174,27 @@ We then plot the distribution of zeros for exponential sum with collinear comple
 
 \section{General Complex Constants.}
 
-Inspired by , we will illustrate this most general case by using the following exponential sum as an example:
+The most general case discussed in the paper is when the exponents may be any set of complex constants. We will illustrate this most general case by using the following exponential sum as an example:
 \begin{align*}
 &3e^{(8+2i)z} + (-9 + 12i)e^{(4+7i)z} + (2 + 1i) * e^{(-7+4i)z} + (-5) e^{(-6-6i)z} \\
 &+ (6 - 7i)e^{(1-8i)z} + (8 - 5i) e^{(6-4i)z} + (3 - 9i) e^{(4+4i)*z} + 2 e^{(-2-4i)z}.
 \end{align*}
-We then plot the distribution of zeros of this exponential sum in Figure 2.
+We then plot the distribution of zeros of this exponential sum in Figure 4.
 
+A geometric method is used in the paper. Let it be supposed that the values $\bar c_j$ (conjugate to the exponents) have been plotted in the complex plane (Figure 5). Construct the polygon $P$ which (i), is convex, (ii), has vertices only at points of the set, and (iii), includes all points of the set either in its interior or on its perimeter. Given these three conditions, we obtain the polygon as shown in Figure 6. 
+
+(This step is simply number the vertices in the polygon using the index r and h, in order to describe the distribution of zeros in the following theorem.) Let the sides of the polygon $P$ be numbered counterclockwise as $r=1,2,...,q$, and let the points of the set $\bar{c}_{j}$ which lie on the side $l_r$ be numbered as $\bar{c}_{rh}, where h = 1, 2, ..., hr$. 
+
+In this particular case, for all $z$ in the section $w_{r-1} + \epsilon \leq arg{z} < w_r + \epsilon$, the sum $\Phi(z)$ may be expressed as a sum with a reduced number of terms, i.e.,
+
+\begin{equation}
+\tag{29} \Phi_1(z) = \sum_{h=1}^{h_r} A_{rh}(z)e^{c_{rh}z}.
+\end{equation}
+
+This way, we transform this most general case to the previous case of collinear complex exponents. It then follows from Theorem 7 that the zeros of $\Phi(z)$ within the sector are asymptotically confined to one or more strips which are parallel or approach parallelism with the normal to the associated side of the polygon, as more formally stated in Theorem 8 below.
+
+To visualize this result, we overlay the polygon in Figure 6 with the distribution of zeros. It is clear that the lines where the zeros are distributed are normal to the sides of polygon, respectively.
+ 
 \begin{theo}
 	If in the sum (1) the exponents are any complex constants, the zeros of $\Phi(z)$ are confined for $\abs {z} >M$ to a finite number of strips each of asymptotically constant width. These strips are associated in groups with the exterior normals to the sides of the polygon described in the text, and approach parallelism with the respective normals. Within each group of strips the distribution of zeros may be described as in the previously stated theorems, the role of the axis of reals being transferred to the respective side of the polygon.
 \end{theo}
@@ -188,7 +211,7 @@ We then plot the distribution of zeros of this exponential sum in Figure 2.
 	\begin{center}
 		\includegraphics[width=\textwidth]{plot-general-real.png}
 	\end{center}
-	\caption{Constant Coefficients and General Real Exponents.}
+	\caption{Constant coefficients and general real exponents.}
 	\label{fig:figure1}
 \end{figure}
 
@@ -196,7 +219,7 @@ We then plot the distribution of zeros of this exponential sum in Figure 2.
 	\begin{center}
 		\includegraphics[width=\textwidth]{plot-collinear-complex-exponents.png}
 	\end{center}
-	\caption{Collinear Complex Exponents.}
+	\caption{Collinear complex exponents.}
 	\label{fig:figure1}
 \end{figure}
 
@@ -204,7 +227,31 @@ We then plot the distribution of zeros of this exponential sum in Figure 2.
 	\begin{center}
 		\includegraphics[width=\textwidth]{plot-general-complex.png}
 	\end{center}
-	\caption{General Complex Constants.}
+	\caption{General complex constants.}
+	\label{fig:figure1}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{non-convex-polygon.png}
+	\end{center}
+	\caption{Polygon joined by all the points.}
+	\label{fig:figure1}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{convex-polygon.png}
+	\end{center}
+	\caption{Convex polygon.}
+	\label{fig:figure1}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{overlaid-plot.png}
+	\end{center}
+	\caption{Overlaid plot.}
 	\label{fig:figure1}
 \end{figure}
 
