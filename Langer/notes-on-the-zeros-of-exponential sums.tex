@@ -28,9 +28,9 @@
 	\begin{equation} 
 	\tag{1} \Phi(z) = \sum_{j=0}^{n}A_{j}(z) e^{c_{j}z}, 
 	\end{equation}
-	where the coefficients $A_{j}(z)$ and the exponents $c_{j}$ are constants, $c_{j}\in \RR.$ The exponential sum will be the subject of discussion. 
+	where the coefficients $A_{j}(z)$ and the exponents $c_{j}$ are constants, $c_{j}\in \RR.$ 
 	
-	This paper aims to consider the distribution of zeros of exponential sums, from forms of less to forms of greater generality. It is relevant to our project because these results help us 'eliminate' terms in the exponential sums that can be considered as zero, i.e., the terms that do not contribute as much to the final value of the exponential sum. This will in turn significantly speed up the process of numerically evaluating the integration of exponential sums. 
+	This paper aims to consider the distribution of zeros of exponential sums, from forms of less to forms of greater generality. It is relevant to our project because these results help us ``eliminate" terms in the exponential sums that can be considered as zero, i.e., the terms that do not contribute as much to the final value of the exponential sum. This will in turn significantly speed up the process of numerically evaluating the integrals of exponential sums. 
 	
 	For the purpose of our project, we will only focus on the following cases: (1) Constant Coefficients and Real Commensurable Exponents. (2) Constant Coefficients and General Real Exponents. (3) Coefficients Asymptotically Constant. (4) Collinear Complex Exponents. (5) General Complex Constants. (Note that the original theorems 5 and 6 are less relevant to our project because the polynomials are assumed to be of the same degree in the scope of our project.)
 
@@ -39,7 +39,7 @@
 
 The paper starts by discussing the simplest case: when the coefficients are constants ($A_j(z) \equiv a_j$) and the exponents are commensurable real numbers. Two real numbers are commensurable if their ratio is rational, for example, $2\pi$ and $4\pi$ are commensurable because $\frac{2\pi}{4\pi} = \frac{1}{2} \in \QQ$. 
 
-This case is the simplest because then the problem of the distribution of zeros essentially becomes an algebraic one: to simply arrange the terms to suppose that the exponents occur in the order of increasing algebraic magnitude and to assume without loss of generality that the first exponent $c_0$ is zero (to remove any exponential factor that does not really matter, i.e., that does not affect the number or distribution of the zeros of the function as a whole).
+This case is the simplest because under this case the problem of the distribution of zeros is essentially an algebraic one: to simply arrange the terms to suppose that the exponents occur in the order of increasing algebraic magnitude and to assume without loss of generality that the first exponent $c_0$ is zero (to remove any exponential factor that does not really matter, i.e., that does not affect the number or distribution of the zeros of the function as a whole).
 
 In this case, the sum is of the form:
 \begin{equation} 
@@ -54,7 +54,7 @@ $$\Phi(z) = (e^z)^0 + (e^{\pi z})^1 + (e^{\pi z})^2 + (e^{\pi z})^3 + (e^{\pi z}
 
 Its distribution of zeros are plotted in Figure 1.
 
-For form 3, the zeros of the function occurs when values of $z$ satisfy a relation:
+For form (3), the zeros of the function occurs when values of $z$ satisfy a relation:
 
 $$e^{\alpha z} = \xi_j.$$
 
@@ -71,7 +71,7 @@ From the result (4), given a function $\Phi(z),$ there exists a constant $K$ suc
 \tag {5} \abs{x}<K, (z=x+iy).
 \end{equation}
 
-By evaluating the extreme possible changes in $arg \Phi(z)$ as $z$ traces the boundary of the above rectangle, the paper also concludes that the number $n(R)$ of zeros of $\Phi(z)$ within the rectangle is subject to the bounds:
+By evaluating the extreme possible changes in $\arg \Phi(z)$ as $z$ traces the boundary of the above rectangle, the paper also concludes that the number $n(R)$ of zeros of $\Phi(z)$ within the rectangle is subject to the bounds:
 
 \begin{equation} 
 \tag {7} -n + \frac{c_n}{2\pi}(y_2-y_1) \leq n(R) \leq n + \frac{c_n}{2\pi}(y_2-y_1).
@@ -117,7 +117,7 @@ The hypothesis of commensurability includes the trigonometric sums. In fact, it 
 	
 	The result (as stated in Theorem 3 below) is the same as in the first case. What applies to the first case can also be established for the more general case. 
 	
-	It is also illustrated in Figure 2 that the distribution of zeros for general real exponents follow the same pattern as the case of real commensurable exponents. In Figure 2, we plot, as a convenient example, the distribution of zeros of an exponential sum with general real exponents that are not commensurable to each other: $\Phi(z) = e^{\pi z} + e^{1*z} + e^{1.5z} + e^{\sqrt{2}z} + e^{\log(7)z}.$
+	It is also illustrated in Figure 2 that the distribution of zeros for general real exponents follow the same pattern as the case of real commensurable exponents. In Figure 2, we plot, as a convenient example, the distribution of zeros of an exponential sum with general real exponents that are not commensurable to each other: $\Phi(z) = e^{\pi z} + e^{z} + e^{1.5z} + e^{\sqrt{2}z} + e^{\log(7)z}.$
 	
 \begin{theo}
 	If in the exponential sum (10) the coefficients are constants and the exponents are real, then the zeros of the sum all lie within a strip (5), i.e., 
@@ -136,11 +136,11 @@ The hypothesis of commensurability includes the trigonometric sums. In fact, it 
 
 If the second case is a more general replacement of the hypothesis of commensurability, then in this section, the hypothesis of constant coefficients is replaced without essential loss by a less stringent one: that the coefficients are sufficiently like constants when $\abs{z}$ is large.
 
-The main reason that we can replace this hypothesis is that we are mostly interested in the region $\abs{z} > M$ where $M$ is a constant arbitrarily large. And we know that there must exist an arbitrarily large number $M$ such that in the region $\abs{z} > M$ the coefficients are constant. In other words, the coefficients do not have to be exactly constant in value, as long as $\abs{z}$ is sufficiently large (i.e., as long as $z$ gets sufficiently far away from the origin), we can take it as that the coefficients are constant, or in more precise terms, asymptotically constant. 
+The main reason that we can replace this hypothesis is that we are mostly interested in the region $\abs{z} > M$ where $M$ is a constant arbitrarily large. And we know that there must exist an arbitrarily large number $M$ such that in the region $\abs{z} > M$ the coefficients are constant. In other words, the coefficients do not have to be exactly constant in value, as long as $\abs{z}$ is sufficiently large (i.e., as long as $z$ gets sufficiently far away from the origin), we can take it as that the coefficients are asymptotically constant. 
 
 To fit this case in a form corresponding to sum (1), the paper introduced the epsilon function, $\epsilon(z)$. In a region $R$ of the $z$ plane including the point $z=\infty$, $\epsilon(z)$ is analytic in every finite portion of $R$ and it approaches zero uniformly in $R$ as $\abs{z} \to \infty$.
 
-Now either that the coefficients $A_j(z)$ in the sum (1) are single valued and of the form $ A_J(z) = a_j + \epsilon(z),$ in the region $\abs(z) > M$, or that they are multiple valued but such that in the region $\abs(z) > M$, $-\pi < arg z \leq \pi$, their various branches are each of the form $ A_J(z) = a_j + \epsilon(z).$
+Now either that the coefficients $A_j(z)$ in the sum (1) are single valued and of the form $ A_j(z) = a_j + \epsilon(z),$ in the region $\abs{z} > M$, or that they are multiple valued but such that in the region $\abs{z} > M$, $-\pi < \arg z \leq \pi$, their various branches are each of the form $ A_j(z) = a_j + \epsilon(z).$
 
 Therefore, under this case of ``Coefficients Asymptotically Constant," the form assumed for the sum (1) is:
 	\begin{equation} 
@@ -185,7 +185,7 @@ A geometric method is used in the paper. Let it be supposed that the values $\ba
 
 (This step is simply number the vertices in the polygon using the index r and h, in order to describe the distribution of zeros in the following theorem.) Let the sides of the polygon $P$ be numbered counterclockwise as $r=1,2,...,q$, and let the points of the set $\bar{c}_{j}$ which lie on the side $l_r$ be numbered as $\bar{c}_{rh}, where h = 1, 2, ..., hr$. 
 
-In this particular case, for all $z$ in the section $w_{r-1} + \epsilon \leq arg{z} < w_r + \epsilon$, the sum $\Phi(z)$ may be expressed as a sum with a reduced number of terms, i.e.,
+In this particular case, for all $z$ in the section $w_{r-1} + \epsilon \leq \arg{z} < w_r + \epsilon$, the sum $\Phi(z)$ may be expressed as a sum with a reduced number of terms, i.e.,
 
 \begin{equation}
 \tag{29} \Phi_1(z) = \sum_{h=1}^{h_r} A_{rh}(z)e^{c_{rh}z}.
@@ -193,7 +193,7 @@ In this particular case, for all $z$ in the section $w_{r-1} + \epsilon \leq arg
 
 This way, we transform this most general case to the previous case of collinear complex exponents. It then follows from Theorem 7 that the zeros of $\Phi(z)$ within the sector are asymptotically confined to one or more strips which are parallel or approach parallelism with the normal to the associated side of the polygon, as more formally stated in Theorem 8 below.
 
-To visualize this result, we overlay the polygon in Figure 6 with the distribution of zeros. It is clear that the lines where the zeros are distributed are normal to the sides of polygon, respectively.
+To visualize this result, we overlay the polygon in Figure 6 with the distribution of zeros (see Figure 7). It is clear that the lines where the zeros are distributed are normal to the sides of polygon, respectively.
  
 \begin{theo}
 	If in the sum (1) the exponents are any complex constants, the zeros of $\Phi(z)$ are confined for $\abs {z} >M$ to a finite number of strips each of asymptotically constant width. These strips are associated in groups with the exterior normals to the sides of the polygon described in the text, and approach parallelism with the respective normals. Within each group of strips the distribution of zeros may be described as in the previously stated theorems, the role of the axis of reals being transferred to the respective side of the polygon.

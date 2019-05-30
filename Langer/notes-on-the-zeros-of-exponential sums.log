@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.8)  30 MAY 2019 21:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.8)  31 MAY 2019 00:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -765,8 +765,8 @@ Package mdframed Info: mdframed detected package amsthm
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 	\begin{equation}
-                       ]
+l.116 	\end{equation}
+                     ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 122.
@@ -775,84 +775,71 @@ Package mdframed Info: mdframed detected package amsthm
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.143 N
-       ow either that the coefficients $A_j(z)$ in the sum (1) are single va...
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
+l.144 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.143 N
-       ow either that the coefficients $A_j(z)$ in the sum (1) are single va...
-]
+l.144 
+      ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 152.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 171.
-
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 173.
-
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 173.
-[5pdfTeX warning (ext4): destination with the same identifier (name{equation.3.
-1}) has been already used, duplicate ignored
+ [5pdfTeX warning (ext4): destination with the same identifier (name{equation.3
+.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.173 \end{theo}
-                ]
+l.178 \begin{align*}
+                    ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 198.
- [6]
-<plot-real-commensurable.png, id=90, 595.22375pt x 431.6125pt>
+<plot-real-commensurable.png, id=83, 595.22375pt x 431.6125pt>
 File: plot-real-commensurable.png Graphic file (type png)
 <use plot-real-commensurable.png>
 Package pdftex.def Info: plot-real-commensurable.png  used on input line 204.
 (pdftex.def)             Requested size: 398.3386pt x 288.84299pt.
-<plot-general-real.png, id=92, 612.2875pt x 456.70625pt>
+<plot-general-real.png, id=85, 612.2875pt x 456.70625pt>
 File: plot-general-real.png Graphic file (type png)
 <use plot-general-real.png>
 Package pdftex.def Info: plot-general-real.png  used on input line 212.
 (pdftex.def)             Requested size: 398.3386pt x 297.12035pt.
-<plot-collinear-complex-exponents.png, id=93, 613.29124pt x 462.72874pt>
+<plot-collinear-complex-exponents.png, id=86, 613.29124pt x 462.72874pt>
 File: plot-collinear-complex-exponents.png Graphic file (type png)
 <use plot-collinear-complex-exponents.png>
 Package pdftex.def Info: plot-collinear-complex-exponents.png  used on input li
 ne 220.
 (pdftex.def)             Requested size: 398.3386pt x 300.54417pt.
-<plot-general-complex.png, id=94, 580.1675pt x 420.57124pt>
+<plot-general-complex.png, id=87, 580.1675pt x 420.57124pt>
 File: plot-general-complex.png Graphic file (type png)
 <use plot-general-complex.png>
 Package pdftex.def Info: plot-general-complex.png  used on input line 228.
 (pdftex.def)             Requested size: 398.3386pt x 288.7634pt.
-<non-convex-polygon.png, id=95, 573.14125pt x 361.35pt>
+<non-convex-polygon.png, id=88, 573.14125pt x 361.35pt>
 File: non-convex-polygon.png Graphic file (type png)
 <use non-convex-polygon.png>
 Package pdftex.def Info: non-convex-polygon.png  used on input line 236.
 (pdftex.def)             Requested size: 398.3386pt x 251.1458pt.
-<convex-polygon.png, id=96, 508.90125pt x 341.275pt>
+<convex-polygon.png, id=89, 508.90125pt x 341.275pt>
 File: convex-polygon.png Graphic file (type png)
 <use convex-polygon.png>
 Package pdftex.def Info: convex-polygon.png  used on input line 244.
 (pdftex.def)             Requested size: 398.3386pt x 267.14117pt.
-<overlaid-plot.png, id=97, 586.3506pt x 393.6306pt>
+<overlaid-plot.png, id=90, 586.3506pt x 393.6306pt>
 File: overlaid-plot.png Graphic file (type png)
 <use overlaid-plot.png>
 Package pdftex.def Info: overlaid-plot.png  used on input line 252.
 (pdftex.def)             Requested size: 398.3386pt x 267.413pt.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
- [7 <./plot-real-commensurable.png>] [8 <./plot-general-real.png>] [9 <./plot-c
-ollinear-complex-exponents.png>] [10 <./plot-general-complex.png>] [11 <./non-c
-onvex-polygon.png>] [12 <./convex-polygon.png>] [13 <./overlaid-plot.png>]
+ [6] [7 <./plot-real-commensurable.png>] [8 <./plot-general-real.png>] [9 <./pl
+ot-collinear-complex-exponents.png>] [10 <./plot-general-complex.png>] [11 <./n
+on-convex-polygon.png>] [12 <./convex-polygon.png>]
+[13 <./overlaid-plot.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
  (./notes-on-the-zeros-of-exponential sums.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
@@ -869,11 +856,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 258.
 Here is how much of TeX's memory you used:
  16582 strings out of 492649
  294335 string characters out of 6129623
- 389010 words of memory out of 5000000
+ 390010 words of memory out of 5000000
  20281 multiletter control sequences out of 15000+600000
  537715 words of font info for 50 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 39i,12n,43p,10461b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,43p,10461b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -888,8 +875,8 @@ live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
 e/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "notes-on-the-zeros-of-exponential sums.pdf" (13 pages, 33153
-41 bytes).
+Output written on "notes-on-the-zeros-of-exponential sums.pdf" (13 pages, 33146
+69 bytes).
 PDF statistics:
  202 PDF objects out of 1000 (max. 8388607)
  157 compressed objects within 2 object streams
