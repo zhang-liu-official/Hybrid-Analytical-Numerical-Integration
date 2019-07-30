@@ -1,2 +1,4 @@
 # Hybrid Analytical-Numerical Integration
-* Aim to evaluate 
+* Julia syntax and mini project
+* Langer paper
+* Julia data structure
