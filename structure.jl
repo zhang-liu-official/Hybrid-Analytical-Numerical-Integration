@@ -1,12 +1,13 @@
+
 struct ExpPoly
     ExpList::Array{ComplexF64}
     CoeffList::Array{ComplexF64}
     function ExpPoly(ExpList::Array{ComplexF64}, CoeffList::Array{ComplexF64})
-        if(length(ExpList) != length(b))
+        if(length(ExpList) != length(CoeffList))
             error("Invalid Exponential Polynomial")
         end
 
-        CheckList::Dict{ComplexF64, Int64}()
+        CheckList = Dict{ComplexF64, Int64}()
         #exponent + index (at the first time it appears)
 
         for i = 1:length(ExpList)
