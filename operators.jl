@@ -46,21 +46,19 @@ end
 
 function Base.:*(x::ExpPoly, y::ExpPoly)
     z = ExpPoly(Array{ComplexF64,1}(undef, length(x.ExpList)*length(y.ExpList)), Array{ComplexF64,1}(undef, length(x.CoeffList)*length(y.CoeffList)))
-    k = 1
+    k = 0
     #print(length(x.ExpList)*length(y.ExpList))
     for i = 1:length(x.ExpList)
         for j = 1:length(y.ExpList)
+            k = k + 1
             z.CoeffList[k] = x.CoeffList[i] * y.CoeffList[j]
             z.ExpList[k] = x.ExpList[i] + y.ExpList[j]
-            k = k + 1
         end
     end
     return ExpPoly(z.ExpList, z.CoeffList)
 end
 
-#convert to julia function in simpy
-
-
+#Test the operator +,-,* with an arbitrary example:
 a = ExpPoly([6.0+8.0im, 5.0+7.0im, 5.0+5.0im, 4.0+3.0im],[1.0+2.0im, 3.0+4.0im, 4.0+1.0im, 2.0+4.0im])
 b = ExpPoly([6.0+8.0im],[2.0+2.0im])
 print(a+b)
@@ -70,3 +68,5 @@ print(a*b)
 a = ExpPoly([6.0+8.0im, 5.0+7.0im],[1.0+2.0im, 3.0+4.0im])
 b = ExpPoly([6.0+8.0im, 3.0+2.0im],[2.0+2.0im, 5.0+8.0im])
 =#
+
+#convert to julia function in simpy
